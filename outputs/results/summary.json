@@ -1,0 +1,33 @@
+{
+  "model": "ResNet1D_12Lead",
+  "dataset": "PTB-XL (physionet.org/content/ptb-xl/1.0.3/)",
+  "test_samples": 2158,
+  "test_accuracy": 0.7034,
+  "test_macro_f1": 0.6004,
+  "test_macro_auc": 0.8741,
+  "per_class_f1": {
+    "NORM": 0.8081,
+    "MI": 0.5997,
+    "STTC": 0.6915,
+    "CD": 0.6818,
+    "HYP": 0.2211
+  },
+  "danger_weighted_error": 0.4754,
+  "critical_errors": {
+    "count": 88,
+    "rate": 0.0408,
+    "MI_predicted_as_NORM": 61,
+    "NORM_predicted_as_MI": 27
+  },
+  "subgroup_dwe": {
+    "age_under40": 0.313,
+    "age_40to60": 0.480,
+    "age_60to75": 0.487,
+    "age_over75": 0.545,
+    "female": 0.410,
+    "male": 0.545
+  },
+  "params": 1186437,
+  "classes": ["NORM", "MI", "STTC", "CD", "HYP"],
+  "label_scheme": "AAMI superclass (PTB-XL diagnostic_class)"
+}

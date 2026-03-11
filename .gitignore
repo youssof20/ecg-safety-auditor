@@ -1,0 +1,9 @@
+data/
+outputs/models/
+outputs/results/*.npy
+outputs/results/*.pt
+__pycache__/
+*.pyc
+.env
+*.egg-info/
+.DS_Store
